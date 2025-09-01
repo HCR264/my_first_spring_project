@@ -7,5 +7,13 @@
     <!-- Define a bean for HelloWorld -->
     <bean id="helloWorld" class="com.trainibit.example.HelloWorld">
         <property name="message" value="Hello, from XML!"/>
+        <property name="user" ref="user"/>
     </bean>
+
+    <bean id="user" class="com.trainibit.example.User">
+        <property name="name" value="Harold"/>
+        <property name="lastName" value="Cruz-Ramirez"/>
+        <property name="birthDate" value="10/12/2001"/>
+    </bean>
+
 </beans>
